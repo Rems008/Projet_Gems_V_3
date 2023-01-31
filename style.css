@@ -265,6 +265,7 @@ footer a {
 @media (min-width: 900px) {
   nav {
     background: var(--color-tertiaire);
+    transition: all 0.5s ease;
   }
 
   .titre {
@@ -281,6 +282,8 @@ footer a {
     align-items: center;
     margin-top: 10px;
     width: 100%;
+    margin-left: 0;
+    transition: none;
   }
 
   .nav-menu a {
