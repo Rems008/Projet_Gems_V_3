@@ -16,62 +16,238 @@
   </head>
   <body>
     <header>
-      <div class="bandeau">
-        <h6 class="bandeau-text">LIVRAISON OFFERTE A PARTIR DE 300 €</h6>
-      </div>
-      <nav>
-        <a href="#" class="nav-titre">
-          <span>GEMS</span>
-        </a>
-        <div class="nav-menu">
-          <a href="#" class="icon-burger">
-            <img
-              class="burger"
-              src="./public/icon/Image_Gems_Bijoux_Atelier_Menu.png"
-              alt="user-icon"
-            />
-          </a>
-          <a href="#" class="icon">
-            <img
-              src="./public/icon/Image_Gems_Bijoux_Atelier_Profile.png"
-              alt="user-icon"
-            />
-          </a>
+      <section class="header">
+        <div class="bandeau">
+          <h6 class="bandeau-text">LIVRAISON OFFERTE A PARTIR DE 300 €</h6>
+        </div>
+        <nav>
           <div class="nav-container">
-            <a href="#" aria-current="page">Accueil</a>
-            <a href="#">Bagues</a>
-            <a href="#">Bracelets</a>
-            <a href="#">Colliers</a>
-            <a href="#">Boucles d'oreilles</a>
-            <span class="ligne"></span>
-            <a href="#">Nos conseils</a>
-            <span class="ligne"></span>
-            <a href="#">Notre histoire</a>
-            <span class="ligne"></span>
-            <a href="#">Nous contacter</a>
+            <div class="nav-titre">
+              <div class="nav-icon-left">
+                <a href="#" class="icon-burger">
+                  <img
+                    class="burger"
+                    src="./public/icon/Image_Gems_Bijoux_Atelier_Menu.png"
+                    alt="user-icon"
+                  />
+                </a>
+                <a href="#" class="icon">
+                  <img
+                    src="./public/icon/Image_Gems_Bijoux_Atelier_Profile.png"
+                    alt="user-icon"
+                  />
+                </a>
+              </div>
+              <h1 class="titre">GEMS</h1>
+              <div class="nav-icon-right">
+                <a href="#" class="icon">
+                  <img
+                    src="./public/icon/Image_Gems_Bijoux_Atelier_Loupe.png"
+                    alt="user-icon"
+                  />
+                </a>
+                <a href="#" class="icon">
+                  <img
+                    src="./public/icon/Image_Gems_Bijoux_Atelier_Basket.png"
+                    alt="user-icon"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="nav-menu">
+              <a class="active" href="#" aria-current="page">Accueil</a>
+              <a href="#">Bagues</a>
+              <a href="#">Bracelets</a>
+              <a href="#">Colliers</a>
+              <a href="#">Boucles d'oreilles</a>
+              <span class="ligne"></span>
+              <a href="#">Nos conseils</a>
+              <span class="ligne"></span>
+              <a href="#">Notre histoire</a>
+              <span class="ligne"></span>
+              <a href="#">Nous contacter</a>
+            </div>
           </div>
-        </div>
-        <div class="nav-icon">
-          <a href="#" class="icon">
-            <img
-              src="./public/icon/Image_Gems_Bijoux_Atelier_Loupe.png"
-              alt="user-icon"
-            />
-          </a>
-          <a href="#" class="icon">
-            <img
-              src="./public/icon/Image_Gems_Bijoux_Atelier_Basket.png"
-              alt="user-icon"
-            />
-          </a>
-        </div>
-      </nav>
-      <video class="background-video" autoplay muted>
-        <source
-          src="./public/Video/Gems_Bijoux_Atelier_Home.mp4"
+        </nav>
+      </section>
+      <div class="btn-header">
+        <button class="btn-nos-bijoux">NOS BIJOUX</button>
+      </div>
+      <!-- <div class="img">
+        <img
+          class="background-video"
+          src="./public/Img/Image_Gems_Bijoux_Atelier_2.png"
           type="video/mp4"
         />
-      </video>
+      </div> -->
     </header>
+    <main>
+      <section class="articles">
+        <div class="titre-article">
+          <h2 class="categories">NOS BAGUES</h2>
+          <p class="categorie-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae quis
+            at accusantium ut voluptas temporibus a.
+          </p>
+        </div>
+        <div class="card-article">
+          <article class="card">
+            <img
+              class="card-img"
+              src="./public/Img/Image_Gems_Bijoux_Atelier_Roma.jpeg"
+              alt=""
+            />
+            <h5 class="card-titre">ROMA</h5>
+            <p class="card-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="btn-voir">Voir</button>
+          </article>
+          <article class="card">
+            <img
+              class="card-img"
+              src="./public/Img/Image_Gems_Bijoux_Atelier_Roma.jpeg"
+              alt=""
+            />
+            <h5 class="card-titre">ROMA</h5>
+            <p class="card-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="btn-voir">Voir</button>
+          </article>
+          <article class="card">
+            <img
+              class="card-img"
+              src="./public/Img/Image_Gems_Bijoux_Atelier_Roma.jpeg"
+              alt=""
+            />
+            <h5 class="card-titre">ROMA</h5>
+            <p class="card-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="btn-voir">Voir</button>
+          </article>
+        </div>
+      </section>
+      <div class="btn">
+        <button class="btn-roma">ROMA</button>
+      </div>
+      <section class="articles">
+        <div class="titre-article">
+          <h2 class="categories">NOS BAGUES</h2>
+          <p class="categorie-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae quis
+            at accusantium ut voluptas temporibus a.
+          </p>
+        </div>
+        <div class="card-article">
+          <article class="card">
+            <img
+              class="card-img"
+              src="./public/Img/Image_Gems_Bijoux_Atelier_Roma.jpeg"
+              alt=""
+            />
+            <h5 class="card-titre">ROMA</h5>
+            <p class="card-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="btn-voir">Voir</button>
+          </article>
+          <article class="card">
+            <img
+              class="card-img"
+              src="./public/Img/Image_Gems_Bijoux_Atelier_Roma.jpeg"
+              alt=""
+            />
+            <h5 class="card-titre">ROMA</h5>
+            <p class="card-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="btn-voir">Voir</button>
+          </article>
+          <article class="card">
+            <img
+              class="card-img"
+              src="./public/Img/Image_Gems_Bijoux_Atelier_Roma.jpeg"
+              alt=""
+            />
+            <h5 class="card-titre">ROMA</h5>
+            <p class="card-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="btn-voir">Voir</button>
+          </article>
+        </div>
+      </section>
+      <div class="btn">
+        <button class="btn-roma">ROMA</button>
+      </div>
+      <section class="articles">
+        <div class="titre-article">
+          <h2 class="categories">NOS BAGUES</h2>
+          <p class="categorie-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae quis
+            at accusantium ut voluptas temporibus a.
+          </p>
+        </div>
+        <div class="card-article">
+          <article class="card">
+            <img
+              class="card-img"
+              src="./public/Img/Image_Gems_Bijoux_Atelier_Roma.jpeg"
+              alt=""
+            />
+            <h5 class="card-titre">ROMA</h5>
+            <p class="card-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="btn-voir">Voir</button>
+          </article>
+          <article class="card">
+            <img
+              class="card-img"
+              src="./public/Img/Image_Gems_Bijoux_Atelier_Roma.jpeg"
+              alt=""
+            />
+            <h5 class="card-titre">ROMA</h5>
+            <p class="card-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="btn-voir">Voir</button>
+          </article>
+          <article class="card">
+            <img
+              class="card-img"
+              src="./public/Img/Image_Gems_Bijoux_Atelier_Roma.jpeg"
+              alt=""
+            />
+            <h5 class="card-titre">ROMA</h5>
+            <p class="card-p">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="btn-voir">Voir</button>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="div-footer">
+        <div>
+          <a href="#">TRUC</a>
+          <a href="#">TRUC</a>
+          <a href="#">TRUC</a>
+        </div>
+        <div>
+          <a href="#">TRUC</a>
+          <a href="#">TRUC</a>
+          <a href="#">TRUC</a>
+        </div>
+        <div>
+          <a href="#">TRUC</a>
+          <a href="#">TRUC</a>
+          <a href="#">TRUC</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
