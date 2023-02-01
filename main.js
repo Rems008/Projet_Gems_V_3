@@ -7,19 +7,34 @@ function bandeauChange() {
 }
 setInterval("bandeauChange()", 5000);
 
-function bandeauChangeDeux() {
+function bandeauChangeInitial() {
   bandeauText.innerHTML =
     "LIVRAISON OFFERTE À PARTIR DE 300 € EN FRANCE MÉTROPOLITAINE";
 }
-setInterval("bandeauChangeDeux()", 10000);
+setInterval("bandeauChangeInitial()", 10000);
 
 // FUNCTION DU MENU
+
+// NAV SCROLL
+
+const navScroll = document.querySelector(".nav-titre");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 380) {
+    navScroll.classList.add("scroll");
+  } else {
+    navScroll.classList.remove("scroll");
+  }
+});
+
+// MENU BURGER
 
 const menuBurger = document.querySelector(".burger");
 const navMenu = document.querySelector(".nav-menu");
 
-menuBurger.addEventListener("click", () => {
+menuBurger.addEventListener("click", (event) => {
   navMenu.classList.toggle("mobile-menu");
+  event.preventDefault();
 });
 
 navMenu.addEventListener("mouseleave", () => {
