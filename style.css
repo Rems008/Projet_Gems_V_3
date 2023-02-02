@@ -52,7 +52,7 @@ header {
   font-family: var(--font-family-tertiaire);
   font-style: normal;
   font-weight: 400;
-  font-size: 10px;
+  font-size: 8px;
   letter-spacing: 1px;
   color: var(--color-tertiaire);
   cursor: default;
@@ -163,6 +163,10 @@ main {
   background-color: var(--color-tertiaire);
 }
 
+.article {
+  padding: 20px 10px;
+}
+
 .categorie {
   text-align: center;
 }
@@ -172,12 +176,15 @@ main {
   font-weight: 400;
 }
 
-.categorie-text {
+.categorie-p {
+  padding: 20px;
   font-family: var(--font-family-secondaire);
+  color: var(--color-secondaire);
 }
 
 .card {
   display: flex;
+  /* flex-wrap: wrap; */
   flex-direction: row;
   justify-content: space-between;
 }
@@ -187,20 +194,21 @@ main {
   flex-direction: column;
   text-align: justify;
   align-items: center;
-  padding: 10px;
 }
 
-.card-img {
-  width: 80%;
+img.card-img {
+  width: 60%;
 }
 
 .card-titre {
   font-family: var(--font-family-principal);
+  color: var(--color-secondaire);
 }
 
 .card-p {
+  padding: 20px;
   font-family: var(--font-family-secondaire);
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
 }
 
@@ -208,9 +216,10 @@ main {
   width: 100px;
   height: 30px;
   margin: 20px 20px 40px;
+  padding: 5px;
+  margin: 10px;
   font-size: 12px;
   line-height: 22px;
-  text-align: center;
   background: var(--color-secondaire);
   border-radius: 5px;
   border: var(--color-secondaire);
@@ -313,6 +322,11 @@ footer a {
   header {
     background-position-y: 65px;
   }
+
+  .bandeau-text {
+    font-size: 14px;
+  }
+
   nav {
     background: var(--color-tertiaire);
     transition: all 0.5s ease;
@@ -345,8 +359,25 @@ footer a {
     display: none;
   }
 
-  .articles {
-    top: 80px;
+  /* MAIN */
+
+  .categorie-titre {
+    font-size: 30px;
+  }
+  .categorie-p {
+    font-size: 20px;
+  }
+
+  .card-titre {
+    font-size: 20px;
+  }
+
+  .card-p {
+    font-size: 16px;
+  }
+
+  .btn-voir {
+    font-size: 18px;
   }
 
   .banniere-img-un {
