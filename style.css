@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:display=swap");
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 :root {
   --font-family-principal: "Montserrat", sans-serif;
   --font-family-secondaire: "Nunito Sans", sans-serif;
@@ -13,14 +17,14 @@
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  /* background-color: var(--color-secondaire); */
+  background-color: var(--color-tertiaire);
   color: var(--color-principal);
   font-family: var(--text-principal);
 }
-
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
 header {
   height: 100vh;
   width: 100vw;
@@ -69,7 +73,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  text-decoration: none;
   height: 45px;
   transition: all 0.5s ease-in-out;
 }
@@ -100,7 +103,6 @@ nav {
   margin: 8px 0;
   font-size: 12px;
   font-weight: 500;
-  text-decoration: none;
   color: var(--color-principal);
 }
 
@@ -174,12 +176,14 @@ main {
 .categorie-titre {
   font-family: var(--font-family-principal);
   font-weight: 400;
+  cursor: default;
 }
 
 .categorie-p {
   padding: 20px;
   font-family: var(--font-family-secondaire);
   color: var(--color-secondaire);
+  cursor: default;
 }
 
 .card {
@@ -203,6 +207,7 @@ img.card-img {
 .card-titre {
   font-family: var(--font-family-principal);
   color: var(--color-secondaire);
+  cursor: default;
 }
 
 .card-p {
@@ -210,11 +215,12 @@ img.card-img {
   font-family: var(--font-family-secondaire);
   font-size: 10px;
   text-align: center;
+  cursor: default;
 }
 
 .btn-voir {
-  width: 100px;
-  height: 30px;
+  width: 20vw;
+  height: 5vh;
   margin: 20px 20px 40px;
   padding: 5px;
   margin: 10px;
@@ -267,22 +273,75 @@ img.card-img {
 /* FOOTER */
 
 footer {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background: var(--color-principal);
+  background: var(--color-secondaire);
+  padding: 30px;
 }
 
 footer a {
-  text-decoration: none;
-  color: var(--color-tertiaire);
-  margin: 20px;
-  padding: 20px;
+  color: var(--color-principal);
 }
 
 .div-footer {
   display: flex;
-  justify-content: space-between;
+  justify-items: center;
+  justify-content: space-around;
+}
+
+.div-col {
+  width: max-content;
+}
+
+.div-col > * {
+  display: block;
+  width: max-content;
+  margin: 20px;
+}
+
+.div-col > h3 {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: var(--color-principal);
+  cursor: default;
+}
+
+.div-col > a {
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+.div-col > a:hover {
+  color: var(--color-tertiaire);
+}
+
+.icon-reseau {
+  display: flex;
+  justify-content: center;
+}
+
+.social {
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.fb,
+.insta {
+  cursor: pointer;
+}
+
+.fb:hover {
+  color: #3b5998;
+  background-color: var(--color-tertiaire);
+}
+.insta:hover {
+  color: #8a3ab9;
+  background-color: var(--color-tertiaire);
 }
 
 /* CSS AVEC LE JS */
@@ -390,5 +449,21 @@ footer a {
 
   .banniere-img-trois {
     background-position-y: center;
+  }
+
+  /* FOOTER */
+
+  .div-col > h3 {
+    font-size: 22px;
+  }
+
+  .div-col > a {
+    font-size: 18px;
+  }
+
+  .social {
+    font-size: 55px;
+    width: 80px;
+    height: 80px;
   }
 }
