@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -9,7 +9,7 @@
 :root {
   --font-family-principal: "Montserrat", sans-serif;
   --font-family-secondaire: "Nunito Sans", sans-serif;
-  --font-family-tertiaire: "Roboto Slab", serif;
+  --font-family-tertiaire: "Roboto Slab", sans-serif;
   --color-principal: #060000;
   --color-secondaire: #8e4504;
   --color-tertiaire: #ffffff;
@@ -202,6 +202,7 @@ main {
 
 img.card-img {
   width: 60%;
+  margin-bottom: 15px;
 }
 
 .card-titre {
@@ -229,6 +230,7 @@ img.card-img {
   background: var(--color-secondaire);
   border-radius: 5px;
   border: var(--color-secondaire);
+  box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.6);
   color: var(--color-tertiaire);
   cursor: pointer;
 }
@@ -259,15 +261,27 @@ img.card-img {
 }
 
 .btn-collection {
-  margin: 20px 20px 40px;
+  position: relative;
+  top: 320px;
+  right: 15px;
+  width: 100px;
+  margin: 20px 40px 40px;
+  padding: 5px;
   font-size: 12px;
   line-height: 22px;
   text-align: center;
   background: var(--color-secondaire);
   border-radius: 5px;
   border: var(--color-secondaire);
+  box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.6);
   color: var(--color-tertiaire);
   cursor: pointer;
+}
+
+.btn-collection:hover {
+  background-color: var(--color-tertiaire);
+  color: var(--color-principal);
+  border: 1px solid var(--color-secondaire);
 }
 
 /* FOOTER */
@@ -294,13 +308,14 @@ footer a {
 .div-col > * {
   display: block;
   width: max-content;
-  margin: 20px;
+  margin: 10px;
 }
 
 .div-col > h3 {
   margin-bottom: 20px;
   font-size: 16px;
-  color: var(--color-principal);
+  letter-spacing: 2px;
+  color: var(--color-tertiaire);
   cursor: default;
 }
 
@@ -340,8 +355,17 @@ footer a {
   background-color: var(--color-tertiaire);
 }
 .insta:hover {
-  color: #8a3ab9;
-  background-color: var(--color-tertiaire);
+  background: #d6249f;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+  color: var(--color-tertiaire);
 }
 
 /* CSS AVEC LE JS */
@@ -462,8 +486,9 @@ footer a {
   }
 
   .social {
-    font-size: 55px;
-    width: 80px;
-    height: 80px;
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
   }
 }
