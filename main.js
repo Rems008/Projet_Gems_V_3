@@ -3,15 +3,15 @@
 const bandeauText = document.querySelector(".bandeau-text");
 
 function bandeauChange() {
-  bandeauText.innerHTML = "RÈGLEMENT 3 FOIS SANS FRAIS DÉS 200 €";
+  bandeauText.innerHTML = "RÈGLEMENT 3 FOIS SANS FRAIS DÉS 300 €";
 }
-setInterval("bandeauChange()", 5000);
+setInterval("bandeauChange()", 7000);
 
 function bandeauChangeInitial() {
   bandeauText.innerHTML =
     "LIVRAISON OFFERTE À PARTIR DE 300 € EN FRANCE MÉTROPOLITAINE";
 }
-setInterval("bandeauChangeInitial()", 10000);
+setInterval("bandeauChangeInitial()", 13000);
 
 // FUNCTION DU MENU
 

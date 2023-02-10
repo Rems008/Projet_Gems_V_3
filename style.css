@@ -25,7 +25,7 @@ a {
   text-decoration: none;
   cursor: pointer;
 }
-header {
+.header-home {
   height: 100vh;
   width: 100vw;
   background: fixed;
@@ -144,9 +144,7 @@ nav {
   width: 143px;
   height: 47px;
   margin: 20px;
-  margin-top: 450px;
   font-size: 12px;
-  line-height: 22px;
   text-align: center;
   background: var(--color-secondaire);
   border-radius: 5px;
@@ -221,13 +219,14 @@ img.card-img {
 }
 
 .btn-voir {
-  width: 20vw;
-  height: 5vh;
+  width: 50%;
+  height: auto;
   margin: 20px 20px 40px;
   padding: 5px;
   margin: 10px;
+  align-items: center;
   font-size: 12px;
-  line-height: 22px;
+  letter-spacing: 1px;
   background: var(--color-secondaire);
   border-radius: 5px;
   border: var(--color-secondaire);
@@ -245,16 +244,26 @@ img.card-img {
 /* Banniere photo */
 
 .banniere-img-un {
+  width: 100%;
   background: url(./public/Img/Image_Gems_Bijoux_Atelier_India.jpg);
   height: 400px;
   background-size: cover;
 }
 .banniere-img-deux {
+  width: 100%;
   background: url(./public/Img/Image_Gems_Bijoux_Atelier_India_2.jpg);
   height: 400px;
   background-size: cover;
 }
 .banniere-img-trois {
+  width: 100%;
+  background: url(./public/Img/Image_Gems_Bijoux_Atelier_Celtique.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position-x: center;
+}
+.banniere-img-quatre {
+  width: 100%;
   background: url(./public/Img/Image_Gems_Bijoux_Atelier.jpg);
   height: 400px;
   background-size: cover;
@@ -318,14 +327,14 @@ footer a {
 
 .div-col > h3 {
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 2px;
   color: var(--color-tertiaire);
   cursor: default;
 }
 
 .div-col > a {
-  font-size: 14px;
+  font-size: 12px;
   padding: 5px 0;
 }
 
