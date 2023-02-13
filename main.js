@@ -11,7 +11,7 @@ function bandeauChangeInitial() {
   bandeauText.innerHTML =
     "LIVRAISON OFFERTE À PARTIR DE 300 € EN FRANCE MÉTROPOLITAINE";
 }
-setInterval("bandeauChangeInitial()", 13000);
+setInterval("bandeauChangeInitial()", 12000);
 
 // FUNCTION DU MENU
 
@@ -20,7 +20,7 @@ setInterval("bandeauChangeInitial()", 13000);
 const navScroll = document.querySelector(".nav-titre");
 
 window.addEventListener("scroll", () => {
-  if (window.scrollY > 380) {
+  if (window.scrollY > 300) {
     navScroll.classList.add("scroll");
   } else {
     navScroll.classList.remove("scroll");
