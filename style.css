@@ -435,8 +435,8 @@ footer a {
 } */
 
 @media (min-width: 900px) {
-  header {
-    background-position-y: 65px;
+  .header-home {
+    background-position-y: 100px;
   }
 
   .bandeau-text {
@@ -474,6 +474,10 @@ footer a {
 
   .ligne {
     display: none;
+  }
+
+  .btn-header {
+    height: 600px;
   }
 
   .btn-nos-bijoux {
