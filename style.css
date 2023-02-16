@@ -14,6 +14,7 @@
   --color-secondaire: #8e4504;
   --color-tertiaire: #ffffff;
   --color-inherit: inherit;
+  --box-shadow-principal: 5px 5px 5px -2px rgba(0, 0, 0, 0.6);
 }
 
 body {
@@ -167,6 +168,8 @@ nav {
   background: var(--color-secondaire);
   border-radius: 5px;
   border: var(--color-secondaire);
+  border: 1px solid var(--color-secondaire);
+  box-shadow: var(--box-shadow-principal);
   color: var(--color-tertiaire);
   cursor: pointer;
 }
@@ -248,7 +251,8 @@ img.card-img {
   background: var(--color-secondaire);
   border-radius: 5px;
   border: var(--color-secondaire);
-  box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.6);
+  border: 1px solid var(--color-secondaire);
+  box-shadow: var(--box-shadow-principal);
   color: var(--color-tertiaire);
   cursor: pointer;
 }
@@ -256,7 +260,6 @@ img.card-img {
 .btn-voir:hover {
   color: var(--color-secondaire);
   background-color: var(--color-tertiaire);
-  border: 1px solid var(--color-secondaire);
 }
 
 /* Banniere photo */
@@ -305,7 +308,7 @@ img.card-img {
   background: var(--color-secondaire);
   border-radius: 5px;
   border: var(--color-secondaire);
-  box-shadow: 5px 5px 5px -2px rgba(0, 0, 0, 0.6);
+  box-shadow: var(--box-shadow-principal);
   color: var(--color-tertiaire);
   cursor: pointer;
 }
